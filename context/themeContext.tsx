@@ -1,18 +1,22 @@
 "use client";
-import React, { ReactNode, createContext, useContext, useEffect, useState } from "react";
 
-interface AppContextProps {
-  theme: string | null;
-  setTheme: React.Dispatch<React.SetStateAction<string | null>>;
-}
+import React, {
+  ReactNode,
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
+import { ThemeContextProps } from "@/types";
 
-export const AppContext = createContext<AppContextProps | undefined>(undefined);
+export const ThemeContext = createContext<ThemeContextProps | undefined>(
+  undefined
+);
 
-export const AppProvider = ({ children }: { children: ReactNode }) => {
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const isBrowser = typeof window !== "undefined";
   const storedTheme = isBrowser ? localStorage.getItem("theme") : null;
   const [theme, setTheme] = useState<string | null>(storedTheme);
-
 
   useEffect(() => {
     if (isBrowser) {
@@ -28,20 +32,18 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   }, [theme]);
 
   return (
-    <AppContext.Provider
-      value={{ theme, setTheme }}
-    >
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
-    </AppContext.Provider>
+    </ThemeContext.Provider>
   );
 };
 
 // Custom hook to access the app context
-export function useAppContext() {
-  const context = useContext(AppContext);
+export function useThemeContext() {
+  const context = useContext(ThemeContext);
 
   if (!context) {
-    throw new Error("useApp must be used within an AppProvider");
+    throw new Error("useApp must be used within an ThemeProvider");
   }
 
   return context;
