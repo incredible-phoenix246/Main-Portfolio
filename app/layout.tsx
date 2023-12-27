@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Ubuntu, IBM_Plex_Mono } from "next/font/google";
+import { Ubuntu, IBM_Plex_Mono } from "next/font/google";
 import "./styles/globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -27,7 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ubuntu.variable} ${ibmplex.className}`}>
-        {children}
+        <main>
+          <Navbar />
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
