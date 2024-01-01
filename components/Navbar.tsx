@@ -16,8 +16,8 @@ function Navbar() {
     <div
       className={`${ibmplex.className} dark:bg-black bg-white font-ibmplex text-white lg:px-[128px] md:px-[32px] sm:px-[24px] flex items-center justify-between w-full`}
     >
-      <p className="dark:text-turquoise  lg:text-[32px] md:text-[24px] sm:text-[16px]">
-        {"<P/>"} <span className="dark:text-white">Phoenix</span>
+      <p className="dark:text-turquoise text-black lg:text-[32px] md:text-[24px] sm:text-[16px]">
+        {"<P/>"} <span className="dark:text-white text-black">Phoenix</span>
       </p>
       <ThemeButton />
     </div>

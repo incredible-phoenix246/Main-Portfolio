@@ -40,8 +40,10 @@ export default function Footer() {
             );
           })}
         </div>
-        <p className="text-primary-100">© 2023 Phoenix. All rights reserved.</p>
-        <div>
+        <p className="text-black dark:text-white">
+          © 2023 Phoenix. All rights reserved.
+        </p>
+        <div className="text-black dark:text-white">
           <Link href={""} className="pr-4">
             Terms of Service
           </Link>

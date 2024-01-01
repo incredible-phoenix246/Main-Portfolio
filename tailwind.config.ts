@@ -20,10 +20,10 @@ const config: Config = {
         yellow: "#E7A020",
         lightBlue: "#28A9E0",
       },
-    },
-    fontFamily: {
-      ubuntu: [`var(--font-ubuntu)`, "sans-serif"],
-      ibmplex: [`var(--font-ibmplex)`, "sans-serif"],
+      fontFamily: {
+        ubuntu: [`var(--font-ubuntu)`, "sans-serif"],
+        ibmplex: [`var(--font-ibmplex)`, "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -39,10 +39,10 @@ function ThemeButton() {
   }, [theme]);
   return (
     <div className="flex justify-center items-center">
-      <div className="flex items-center justify-between border border-gray-300 p-[2px] rounded-full w-[115px] h-[50px] my-3 justify-center">
+      <div className="flex items-center justify-between border dark:border-gray-300 border-turquoise p-[2px] rounded-full w-[115px] h-[50px] my-3 justify-center">
         <button
           type="button"
-          className="w-33 h-33 p-2 bg-black/10 rounded-full text-turquoise dark:text-white"
+          className="w-33 h-33 p-2 bg-black dark:bg-transparent rounded-full text-turquoise dark:text-white"
           onClick={handleThemeSwitch}
         >
           <Sun1 size="32" />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu, IBM_Plex_Mono } from "next/font/google";
 import { ThemeProvider } from "@/context/themeContext";
-import "./styles/globals.css";
+import "./styles/globals.scss";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
