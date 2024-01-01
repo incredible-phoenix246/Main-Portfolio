@@ -4,7 +4,7 @@ export interface ThemeContextProps {
 }
 
 export interface NavDataItem {
-  key: number;
+  id: number;
   name: string;
   path: string;
   icon: Icon;
