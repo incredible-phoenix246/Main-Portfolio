@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/context/themeContext";
 import "./styles/globals.scss";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import IconNav from "@/components/IconNav";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         >
           <main>
             <Navbar />
+            <IconNav />
             {children}
           </main>
           <Footer />

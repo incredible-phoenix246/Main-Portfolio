@@ -8,3 +8,52 @@ body {
   margin: 32px;
 }
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.hide-scroll::-webkit-scrollbar {
+	width: 0px;
+}
+.sidebar-scroll::-webkit-scrollbar {
+	width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+	background:" #12F7D6";
+}
+::-webkit-scrollbar {
+	width: 8px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: "#12F7D6";
+	border-radius: 8px;
+}
+
+::selection {
+	color: white;
+	background: "#12F7D6";
+}
+
+
+.translate-z-0 {
+  transform: translateZ(0px);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f13024;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #f13024;
+}
