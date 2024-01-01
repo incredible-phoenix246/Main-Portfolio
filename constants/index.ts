@@ -36,10 +36,10 @@ export const socials = [
 ];
 
 export const navData: NavDataItem[] = [
-  { key: 1, name: "home", path: "/", icon: Menu },
-  { key: 2, name: "about", path: "/about", icon: User },
-  { key: 3, name: "services", path: "/services", icon: CodeCircle },
-  { key: 4, name: "work", path: "/work", icon: Monitor },
-  { key: 5, name: "testimonials", path: "/testimonials", icon: Edit },
-  { key: 6, name: "contact", path: "/contact", icon: PasswordCheck },
+  { id: 1, name: "home", path: "/", icon: Menu },
+  { id: 2, name: "about", path: "/about", icon: User },
+  { id: 3, name: "services", path: "/services", icon: CodeCircle },
+  { id: 4, name: "work", path: "/work", icon: Monitor },
+  { id: 5, name: "testimonials", path: "/testimonials", icon: Edit },
+  { id: 6, name: "contact", path: "/contact", icon: PasswordCheck },
 ];
