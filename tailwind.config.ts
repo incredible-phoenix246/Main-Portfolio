@@ -21,6 +21,10 @@ const config: Config = {
         lightBlue: "#28A9E0",
       },
     },
+    fontFamily: {
+      ubuntu: [`var(--font-ubuntu)`, "sans-serif"],
+      ibmplex: [`var(--font-ibmplex)`, "sans-serif"],
+    },
   },
   plugins: [],
 };
