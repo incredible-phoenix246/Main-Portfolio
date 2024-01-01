@@ -8,6 +8,8 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
 } from "react-share";
+import { NavDataItem } from "@/types";
+
 import {
   type Icon,
   Menu,
@@ -33,19 +35,11 @@ export const socials = [
   },
 ];
 
-export const navData = [
-  { name: "home", path: "/", icon: Menu },
-  { name: "about", path: "/about", icon: User },
-  { name: "services", path: "/services", icon: CodeCircle },
-  { name: "work", path: "/work", icon: Monitor },
-  {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: Edit,
-  },
-  {
-    name: "contact",
-    path: "/contact",
-    icon: PasswordCheck,
-  },
+export const navData: NavDataItem[] = [
+  { key: 1, name: "home", path: "/", icon: Menu },
+  { key: 2, name: "about", path: "/about", icon: User },
+  { key: 3, name: "services", path: "/services", icon: CodeCircle },
+  { key: 4, name: "work", path: "/work", icon: Monitor },
+  { key: 5, name: "testimonials", path: "/testimonials", icon: Edit },
+  { key: 6, name: "contact", path: "/contact", icon: PasswordCheck },
 ];
