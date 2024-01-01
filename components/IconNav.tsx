@@ -14,7 +14,7 @@ function IconNav() {
       <div className="dark:text-white flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10">
         {navData.map((link, Index) => {
           return (
-            <Link href={link.path}>
+           <Link key={link.id} href={link.path}>
               <link.icon />
             </Link>
           );
