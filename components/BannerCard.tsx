@@ -22,6 +22,33 @@ function BannerLeft() {
       <span className="text-[14px] font-ibmplex font-normal leading-[18px] dark:text-white text-turquoise">
         Full-Stack
       </span>
+      <div className="text-[14px] font-ibmplex font-normal leading-[18px] dark:text-white text-turquoise">
+        <h2 className="flex gap-x-3">
+          <span>
+            <Blend />
+          </span>
+          __phoenix@gmail.com
+        </h2>
+        <h2 className="flex justify-between gap-x-3">
+          <span>
+            <Location />
+          </span>
+          Kano, Nigeria
+        </h2>
+        <h2 className="flex justify-between gap-x-3">
+          <span>
+            <Buildings />
+          </span>
+          Freelancer
+        </h2>
+
+        <h2 className="flex justify-between gap-x-3">
+          <span>
+            <Link />
+          </span>
+          www.exmple.com
+        </h2>
+      </div>
     </div>
   );
 }
