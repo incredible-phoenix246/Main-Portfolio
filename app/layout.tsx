@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu, IBM_Plex_Mono } from "next/font/google";
 import { ThemeProvider } from "@/context/themeContext";
+import { useRouter } from "next/navigation";
 import "./styles/globals.scss";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -34,9 +35,9 @@ export default function RootLayout({
         <body
           className={`${ubuntu.variable} ${ibmplex.className} dark:bg-black bg-white`}
         >
-          <main>
+          <IconNav />
+          <main className="px-[32px]">
             <Navbar />
-            <IconNav />
             {children}
           </main>
           <Footer />
