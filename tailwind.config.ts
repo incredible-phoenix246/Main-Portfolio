@@ -19,6 +19,7 @@ const config: Config = {
         blue: "#0C73B8",
         yellow: "#E7A020",
         lightBlue: "#28A9E0",
+        white: "#F0F8FF"
       },
       fontFamily: {
         ubuntu: [`var(--font-ubuntu)`, "sans-serif"],
