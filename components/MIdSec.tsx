@@ -40,7 +40,7 @@ function HeadingComponent() {
         </p>
         <div className="items-stretch flex gap-4 mt-4 pl-6 self-start max-md:pl-5">
           <h1 className="text-cyan-400 text-3xl font-medium leading-10 capitalize grow whitespace-nowrap">
-            Let's{" "}
+            Let&apos;{" "}
             <Link href="#" className="text-cyan-400" passHref>
               talk
             </Link>{" "}
