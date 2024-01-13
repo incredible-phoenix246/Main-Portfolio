@@ -29,13 +29,13 @@ const Logo = () => {
 
   return (
     <Link href="/" className={`${ibmplex.className} glass p-2 rounded-lg`}>
-      <div className="flex flex-row dark:text-turquoise text-black gap-1 items-center uppercase">
-        <span className=" lg:text-[28px] md:text-[20px] sm:text-[16px]">
+      <div className="flex flex-row dark:text-turquoise text-black gap-1 items-center uppercase lg:text-[28px] md:text-[20px] sm:text-[16px]">
+        <span className="">
           {"<P/>"}
         </span>
-        <div className="text-2xl">{typedText}</div>
+        <div className="">{typedText}</div>
         <div>
-          <FaPhoenixSquadron size={24} className="animate-spin" />
+          <FaPhoenixSquadron className="animate-spin" />
         </div>
       </div>
     </Link>
