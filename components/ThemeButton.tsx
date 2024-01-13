@@ -43,19 +43,19 @@ function ThemeButton() {
           {theme === "light" && (
           <button
             type="button"
-            className="md:w-33 md:h-33 p-2 bg-black dark:bg-transparent rounded-full text-turquoise dark:text-white"
+            className="md:w-33 md:h-33 p-2 bg-black dark:bg-transparent rounded-full text-turquoise lg:text-[28px] md:text-[20px] sm:text-[16px]  dark:text-white"
             onClick={handleThemeSwitch}
           >
-            <Sun1 size="32" />
+            <Sun1 />
           </button>
         )}
         {theme === "dark" && (
           <button
             type="button"
-            className="md:w-33 md:-33 p-2 dark:bg-white/20 rounded-full text-turquoise dark:text-white"
+            className="md:w-33 md:-33 p-2 dark:bg-white/20 rounded-full  lg:text-[28px] md:text-[20px] sm:text-[16px] text-turquoise dark:text-white"
             onClick={handleThemeSwitch}
           >
-            <Moon size="32" />
+            <Moon />
           </button>
         )}
       </div>
