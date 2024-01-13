@@ -11,7 +11,7 @@ import HeadingComponent from "@/components/MIdSec";
 function page() {
   return (
     <PageWrapper>
-      <div className="items-center justify-center px-[100px] flex">
+      <div className="items-center justify-center px-[100px] flex mt-[30px]">
         <div className="flex-col items-center justify-between">
           <h2 className="text-turquoise dark:text-white font-ubuntu text-[117px] hidden md:block">
             Developer
@@ -21,7 +21,7 @@ function page() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="items-center justify-between flex md:flex flex-col space-x-3"
+            className="items-center justify-between flex md:flex flex-col space-y-3 space-x-3"
           >
             <BannerLeft />
             <HeadingComponent />
