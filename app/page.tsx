@@ -21,7 +21,7 @@ function page() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="items-center ustify-between flex space-x-3"
+            className="items-center justify-between flex md:flex flex-col space-x-3"
           >
             <BannerLeft />
             <HeadingComponent />
