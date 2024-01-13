@@ -32,7 +32,7 @@ function HeadingComponent() {
         <div className="text-white text-base leading-5 self-stretch mt-4 max-md:max-w-full">
           I help businesses grow by crafting amazing web experiences.
           <span>
-            If you're looking for a developer that likes to get stuff done,
+            If you&apos;re looking for a developer that likes to get stuff done,
           </span>
         </div>
         <p className="text-teal-200 text-sm leading-5 self-stretch mt-4 max-md:max-w-full">
