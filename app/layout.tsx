@@ -37,9 +37,9 @@ export default function RootLayout({
         >
           <IconNav />
           <main className="px-[32px]">
-            <Navbar />
-            {children}
-          </main>
+          <Navbar />
+            
+            {children}</main>
           <Footer />
         </body>
       </ThemeProvider>
