@@ -13,7 +13,7 @@ function HeadingComponent() {
             Hey
           </h2>
           <h3 className="text-cyan-400 text-6xl leading-[72px] capitalize max-md:max-w-full max-md:text-4xl max-md:leading-[50px]">
-            I’m <span className="text-cyan-400">Phoenix</span>
+            I&apos;m <span className="text-cyan-400">Phoenix</span>
           </h3>
           <div className="items-stretch flex justify-between gap-4 max-md:max-w-full max-md:flex-wrap">
             <h4 className="text-white text-6xl leading-[72px] capitalize grow max-md:max-w-full max-md:text-4xl">
