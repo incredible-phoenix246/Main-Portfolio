@@ -8,7 +8,7 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
 } from "react-share";
-import { NavDataItem } from "@/types";
+import { NavDataItem, Stack } from "@/types";
 
 import {
   type Icon,
@@ -42,4 +42,11 @@ export const navData: NavDataItem[] = [
   { id: 4, name: "work", path: "/work", icon: Monitor },
   { id: 5, name: "testimonials", path: "/testimonials", icon: Edit },
   { id: 6, name: "contact", path: "/contact", icon: PasswordCheck },
+];
+
+export const StackItems: Stack[] = [
+  { id: 1, stack: "Next Js" },
+  { id: 2, stack: "Tailwind CSS" },
+  { id: 3, stack: "TypeSript" },
+  { id: 4, stack: "Tailwind CSS" },
 ];

@@ -9,3 +9,8 @@ export interface NavDataItem {
   path: string;
   icon: Icon;
 }
+
+export interface Stack {
+  id: number;
+  stack: string;
+}
