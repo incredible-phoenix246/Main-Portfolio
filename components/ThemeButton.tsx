@@ -40,20 +40,24 @@ function ThemeButton() {
   return (
     <div className="flex justify-center items-center">
       <div className="flex items-center justify-between border dark:border-gray-300 border-turquoise p-[2px] rounded-full w-[115px] h-[40px] my-3">
-        <button
-          type="button"
-          className="w-33 h-33 p-2 bg-black dark:bg-transparent rounded-full text-turquoise dark:text-white"
-          onClick={handleThemeSwitch}
-        >
-          <Sun1 size="32" />
-        </button>
-        <button
-          type="button"
-          className="w-33 h-33 p-2 dark:bg-white/20 rounded-full text-turquoise dark:text-white"
-          onClick={handleThemeSwitch}
-        >
-          <Moon size="32" />
-        </button>
+          {theme === "light" && (
+          <button
+            type="button"
+            className="w-33 h-33 p-2 bg-black dark:bg-transparent rounded-full text-turquoise dark:text-white"
+            onClick={handleThemeSwitch}
+          >
+            <Sun1 size="32" />
+          </button>
+        )}
+        {theme === "dark" && (
+          <button
+            type="button"
+            className="w-33 h-33 p-2 dark:bg-white/20 rounded-full text-turquoise dark:text-white"
+            onClick={handleThemeSwitch}
+          >
+            <Moon size="32" />
+          </button>
+        )}
       </div>
     </div>
   );
