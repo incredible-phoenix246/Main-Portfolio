@@ -22,6 +22,8 @@ const ubuntu = Ubuntu({
 });
 
 export default function Footer() {
+const currentYear = new Date().getFullYear()
+
   return (
     <footer
       className={`${ubuntu.className} max-w-[1240px] mx-auto p-4 py-12 text-white text-[16px] font-normal`}
@@ -41,8 +43,8 @@ export default function Footer() {
           })}
         </div>
         <p className="text-black dark:text-white">
-          © 2023 Phoenix. All rights reserved.
-        </p>
+  &copy; {currentYear} Phoenix. All rights reserved.
+</p>
         <div className="text-black dark:text-white">
           <Link href={""} className="pr-4">
             Terms of Service
