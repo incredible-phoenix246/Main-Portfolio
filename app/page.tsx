@@ -21,31 +21,10 @@ function page() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="items-center ustify-between flex"
+            className="items-center ustify-between flex space-x-3"
           >
             <BannerLeft />
             <HeadingComponent />
-            {/* <header className="items-stretch self-stretch flex max-w-[745px] flex-col">
-              <h1 className="text-teal-200 text-sm leading-5 w-full max-md:max-w-full">
-                &lt;h1&gt;
-              </h1>
-              <span className="items-stretch flex w-full flex-col pl-4 pr-20 max-md:max-w-full max-md:pr-5">
-                <h2 className="text-white text-6xl leading-[72px] capitalize max-md:max-w-full max-md:text-4xl">
-                  Hey
-                </h2>
-                <h3 className="text-cyan-400 text-6xl leading-[72px] capitalize max-md:max-w-full max-md:text-4xl max-md:leading-[50px]">
-                  I’m <span className="text-cyan-400">Sinan</span>
-                </h3>
-                <div className="items-stretch flex justify-between gap-4 max-md:max-w-full max-md:flex-wrap">
-                  <h4 className="text-white text-6xl leading-[72px] capitalize grow max-md:max-w-full max-md:text-4xl">
-                    Full-stack developer
-                  </h4>
-                  <div className="text-teal-200 text-sm leading-5 whitespace-nowrap mt-12 self-end max-md:mt-10">
-                    &lt;/h1&gt;
-                  </div>
-                </div>
-              </span>
-            </header> */}
           </motion.div>
         </div>
       </div>

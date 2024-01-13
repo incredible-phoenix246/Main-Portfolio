@@ -3,7 +3,7 @@ import React from "react";
 
 function HeadingComponent() {
   return (
-    <>
+    <section className="flex-col flex items-center max-w-[700px]">
       <header className="items-stretch self-stretch flex max-w-[745px] flex-col">
         <h1 className="text-teal-200 text-sm leading-5 w-full max-md:max-w-full">
           &lt;h1&gt;
@@ -30,8 +30,10 @@ function HeadingComponent() {
           &lt;p&gt;{" "}
         </p>
         <div className="text-white text-base leading-5 self-stretch mt-4 max-md:max-w-full">
-          I help businesses grow by crafting amazing web experiences. If you're
-          looking for a developer that likes to get stuff done,{" "}
+          I help businesses grow by crafting amazing web experiences.
+          <span>
+            If you're looking for a developer that likes to get stuff done,
+          </span>
         </div>
         <p className="text-teal-200 text-sm leading-5 self-stretch mt-4 max-md:max-w-full">
           &lt;/p&gt;{" "}
@@ -43,21 +45,10 @@ function HeadingComponent() {
               talk
             </Link>{" "}
           </h1>
-          <div className="items-center bg-zinc-700 flex aspect-square flex-col justify-center w-10 h-10 px-2 rounded-[40px] self-start">
-            {/* <Image
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1515fd4b72eaabff4c22131ecf1198b051960deb78cadcf6222156daed097f51?apiKey=252f8d5a726747838fcb04939a832fc3&"
-              className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
-              alt=""
-              role="img"
-              aria-label="User Avatar"
-              width={50}
-              height={50}
-            /> */}
-          </div>
+
         </div>
       </header>
-    </>
+    </section>
   );
 }
 
