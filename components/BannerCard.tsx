@@ -11,6 +11,15 @@ import { FaRegEnvelope } from "react-icons/fa";
 import Link from "next/link";
 
 function BannerLeft() {
+  const handleDownloadCV = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/path/to/your/cv.pdf";
+    downloadLink.download = "cv.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div
       className="flex-col flex items-start justify-center rounded-br-[160px] h-[520px] w-[320px] rounded-tl-[160px] border-4 border-solid dark:border-white shadow-inner border-black "
@@ -33,7 +42,7 @@ function BannerLeft() {
       <span className="text-[14px] font-ibmplex font-normal dark:text-white text-turquoise leading-5 self-center whitespace-nowrap">
         Full-Stack
       </span>
-      <div className="text-[16px] font-ibmplex font-medium space-y-5 leading-[18px] mt-8 dark:text-white text-turquoise self-center max-w-[274px] ">
+      <div className="text-[16px] font-ibmplex font-medium space-y-2 leading-[18px] mt-4 dark:text-white text-turquoise self-center max-w-[274px] ">
         <div className="items-center self-stretch flex gap-4">
           <Link className="flex gap-x-3" href={""}>
             <span className="dark:text-turquoise text-black ">
@@ -55,17 +64,28 @@ function BannerLeft() {
           Freelancer
         </Link>
 
-        <Link className="flex  gap-x-3" href={""}>
+        {/* <Link className="flex  gap-x-3" href={""}>
           <span className="dark:text-turquoise text-black ">
             <Link21 />
           </span>
           www.exmple.com
-        </Link>
+        </Link> */}
       </div>
-    <div>
-      
-    </div>
+      <div className="flex items-center justify-center max-w-[274px] flex-wrap text-[#292F36] self-center mt-3 gap-x-3 gap-y-1 font-semibold text-[16px]">
+        <span className="bg-[#12F7D6] rounded-lg p-2">FRONTEND</span>
+        {/* <span className="bg-[#12F7D6] rounded-lg p-2">TAILWIND CSS</span>
+        <span className="bg-[#12F7D6] rounded-lg p-2">REACT JS</span> */}
+        <span className="bg-[#12F7D6] rounded-lg p-2">BACKEND</span>
+        <span className="bg-[#12F7D6] rounded-lg p-2">TYPESCRIPT ADVOCATE</span>
+      </div>
 
+      <button
+        className="dark:bg-white rounded-full w-full bg-[#292F36] gap-4 text-[20px] self-center mt-3 flex items-center justify-center max-w-[180px] max-h-[56px] dark:text-[#292F36] font-semibold text-white py-[10px] px-[12px]"
+        onClick={() => handleDownloadCV()}
+      >
+        Download CV
+        {/* <DocumentDownload /> */}
+      </button>
     </div>
   );
 }
