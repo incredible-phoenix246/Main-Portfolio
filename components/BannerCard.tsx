@@ -13,7 +13,7 @@ import Link from "next/link";
 function BannerLeft() {
   const handleDownloadCV = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/path/to/your/cv.pdf";
+    downloadLink.href = "../public/assets/resume.pdf";
     downloadLink.download = "cv.pdf";
     document.body.appendChild(downloadLink);
     downloadLink.click();
