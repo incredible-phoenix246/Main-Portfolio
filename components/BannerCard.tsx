@@ -8,6 +8,7 @@ import {
   Buildings,
 } from "iconsax-react";
 import { FaRegEnvelope } from "react-icons/fa";
+import { BsArrowUpRightCircleFill, BsCloudDownload} from 'react-icons/bs'
 import Link from "next/link";
 
 function BannerLeft() {
