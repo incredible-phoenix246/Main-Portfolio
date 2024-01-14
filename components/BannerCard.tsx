@@ -85,7 +85,7 @@ function BannerLeft() {
         onClick={() => handleDownloadCV()}
       >
         Download CV
-        {/* <DocumentDownload /> */}
+        <DocumentDownload /> 
       </button>
     </div>
   );
