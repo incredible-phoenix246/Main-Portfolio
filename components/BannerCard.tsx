@@ -81,7 +81,7 @@ function BannerLeft() {
       </div>
 
       <button
-        className="dark:bg-white rounded-full w-full bg-[#292F36] text-[18px] self-center mt-3 flex items-center justify-center max-w-[180px] max-h-[56px] dark:text-[#292F36] font-semibold text-white py-[10px] px-[12px]"
+        className="dark:bg-white rounded-full w-full bg-[#292F36] text-[18px] gap-2 self-center mt-3 flex items-center justify-center max-w-[180px] max-h-[56px] dark:text-[#292F36] font-semibold text-white py-[10px] px-[8px]"
         onClick={() => handleDownloadCV()}
       >
         Download CV
