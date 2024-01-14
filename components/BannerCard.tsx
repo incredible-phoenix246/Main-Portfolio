@@ -1,14 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import {
-  Location,
-  Link21,
-  BrifecaseTick,
-  Blend,
-  Buildings,
-} from "iconsax-react";
+import { Location, Buildings } from "iconsax-react";
 import { FaRegEnvelope } from "react-icons/fa";
-import { BsArrowUpRightCircleFill, BsCloudDownload} from 'react-icons/bs'
+import { BsCloudDownload } from "react-icons/bs";
 import Link from "next/link";
 
 function BannerLeft() {
@@ -23,7 +19,7 @@ function BannerLeft() {
 
   return (
     <div
-      className="flex-col flex items-start justify-center rounded-br-[160px] h-[520px] w-[320px] rounded-tl-[160px] border-4 border-solid dark:border-white shadow-inner border-black "
+      className="flex-col flex items-start justify-center rounded-br-[160px] h-[520px] self-center w-[320px] rounded-tl-[160px] border-4 border-solid dark:border-white shadow-inner border-black "
       style={{ boxShadow: "-4px -4px 2px 0px #12F7D6" }}
     >
       <Image
@@ -64,18 +60,9 @@ function BannerLeft() {
           </span>
           Freelancer
         </Link>
-
-        {/* <Link className="flex  gap-x-3" href={""}>
-          <span className="dark:text-turquoise text-black ">
-            <Link21 />
-          </span>
-          www.exmple.com
-        </Link> */}
       </div>
       <div className="flex items-center justify-center max-w-[274px] flex-wrap text-[#292F36] self-center mt-3 gap-x-3 gap-y-1 font-semibold text-[16px]">
         <span className="bg-[#12F7D6] rounded-lg p-2">FRONTEND</span>
-        {/* <span className="bg-[#12F7D6] rounded-lg p-2">TAILWIND CSS</span>
-        <span className="bg-[#12F7D6] rounded-lg p-2">REACT JS</span> */}
         <span className="bg-[#12F7D6] rounded-lg p-2">BACKEND</span>
         <span className="bg-[#12F7D6] rounded-lg p-2">TYPESCRIPT ADVOCATE</span>
       </div>
@@ -85,7 +72,7 @@ function BannerLeft() {
         onClick={() => handleDownloadCV()}
       >
         Download CV
-        <BsCloudDownload/> 
+        <BsCloudDownload />
       </button>
     </div>
   );
