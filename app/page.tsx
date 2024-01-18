@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import ThisCantBeReached from "@/components/NotReachable";
 import Startup from "@/components/home/StartUp";
 
-function page() {
+function Page() {
   const [ShowElement, setShowElement] = useState(false);
   useEffect(() => {
     setTimeout(() => {
@@ -24,4 +24,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
