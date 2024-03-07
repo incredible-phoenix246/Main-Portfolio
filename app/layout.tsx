@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Ubuntu, IBM_Plex_Mono } from "next/font/google";
-import { ThemeProvider } from "@/context/themeContext";
 import "./styles/globals.scss";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import IconNav from "@/components/IconNav";
 
 const ubuntu = Ubuntu({
@@ -30,16 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeProvider>
-        <body
-          className={`${ubuntu.variable} ${ibmplex.className}  bg-AAprimary`}
-        >
-          <IconNav />
-          {children}
-          {/* <Navbar /> */}
-          {/* <Footer /> */}
-        </body>
-      </ThemeProvider>
+      <body className={`${ubuntu.variable} ${ibmplex.className}  bg-AAprimary`}>
+        <IconNav />
+        {children}
+      </body>
     </html>
   );
 }
